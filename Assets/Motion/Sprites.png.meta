@@ -1,0 +1,815 @@
+fileFormatVersion: 2
+guid: 0e422543e0497544bb57db470a0e4fe2
+timeCreated: 1524639839
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Front_Attack
+    21300002: Front_Nomal
+    21300004: Back_Attack
+    21300006: Back_Normal
+    21300008: Right_Attack
+    21300010: Right_Normal
+    21300012: Left_Attack
+    21300014: Left_Nomal
+    21300016: Tile
+    21300018: Wall
+    21300020: Trap
+    21300022: Monster
+    21300024: Monster_Attack1
+    21300026: Monster_Attack2
+    21300028: Monster
+    21300030: Monster_Attack_Wait
+    21300032: Monster_Attack_Wait
+    21300034: Star2
+    21300036: Star
+    21300038: Monster_Attack_Wait600
+    21300040: Monster_Attack_Wait400
+    21300042: Monster_Attack1_400
+    21300044: Monster600
+    21300046: Monster400
+    21300048: Monster_Attack2_600
+    21300050: Monster_Attack2_400
+    21300052: Monster_Attack1_600
+    21300054: Monster_Attack_Wait400
+    21300056: Monster_Attack_Wait600
+    21300058: Monster600
+    21300060: Monster400
+    21300062: Boss1
+    21300064: Boss2
+    21300066: Boss_Attack2
+    21300068: Boss_Attack_Wait1
+    21300070: Boss_Attack_Wait2
+    21300072: Boss_Attack1
+    21300074: Lighting3
+    21300076: Lighting2
+    21300078: Lighting
+    21300080: Warning2
+    21300082: Warning
+    21300084: Warning4
+    21300086: Warning3
+    21300088: Thunder
+    21300090: Front_Defence2
+    21300092: Front_Defence
+    21300094: GaleHead
+    21300096: GaleBody
+    21300098: GaleEffect
+    21300100: BashEffect
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 4
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thunder
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boss_Attack_Wait1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boss_Attack_Wait2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boss_Attack2
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boss2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boss1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boss_Attack1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 603
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Lighting
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 201
+        width: 100
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Lighting3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 502
+        width: 100
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Lighting2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 201
+        width: 100
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Trap
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 803
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Right_Attack
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 804
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster400
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 904
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster400
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 904
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster600
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 502
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack_Wait400
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 603
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Back_Attack
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 704
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tile
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 805
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Back_Normal
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 906
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Front_Attack
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 201
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack_Wait600
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 302
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack_Wait
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 403
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack2_600
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 504
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack_Wait400
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 605
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack1_400
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 706
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack_Wait
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 807
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 908
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Warning2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 201
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster600
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 302
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Right_Normal
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 403
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Left_Attack
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 504
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 605
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star2
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 706
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Left_Nomal
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 807
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Front_Nomal
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 908
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Wall
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 201
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Warning3
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 302
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Warning4
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 403
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 504
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack_Wait600
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 605
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack1_600
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 706
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 807
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Front_Defence2
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 908
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Monster_Attack2_400
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 201
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Warning
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 302
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Front_Defence
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 403
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GaleEffect
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 504
+        width: 20
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BashEffect
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 804
+        width: 40
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
