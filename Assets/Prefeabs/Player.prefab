@@ -107,6 +107,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114609928753674916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,10 +123,14 @@ MonoBehaviour:
   blockingLayer:
     serializedVersion: 2
     m_Bits: 256
+  finalityGauge: 0
   hyperTimeSecond: 1
   galeEffect: {fileID: 1914113664667966, guid: 621e584a19be7ef4b9e7463d1a8bce56, type: 2}
   bashEffect: {fileID: 1392238964607562, guid: 1b7a8f99513a92341be3bb0bf6c63653, type: 2}
+  finalityButton: {fileID: 1658411958398378, guid: 8b1ec4ceb13bf024ca2560b1155c8e5f,
+    type: 2}
   hpText: {fileID: 0}
+  finalityText: {fileID: 0}
 --- !u!212 &212059579542294644
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -139,6 +144,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:

@@ -16,21 +16,25 @@ public class Player : MonoBehaviour
     private int playerCounterAttack = 50;
     private int playerBashAttack = 100;
     public int finalityGauge;
+    public int finalityCount;
 
     public float hyperTimeSecond = 1f;
     bool playerTurn = true;
     bool trapIgnore = false;
     bool hyperTime = false;
+    bool finalityMode = false;
 
     private Vector3 startPosition;
     private Vector3 beforePosition;
     public GameObject galeEffect;
     public GameObject bashEffect;
+    public GameObject finalityButton;
 
     public Text hpText;
     public Text finalityText;
 
     private Animator animator;
+    private Animator finalityAnimator;
     private BoxCollider2D boxCollider;
     private Rigidbody2D rd2D;
     private float inverseMoveTime;
@@ -40,19 +44,31 @@ public class Player : MonoBehaviour
     Quaternion left = Quaternion.Euler(0, 0, 90);
     Quaternion right = Quaternion.Euler(0, 0, -90);
 
+    private void Awake()
+    {
+        
+    }
 
     // Use this for initialization
     void Start()
     {
+        GameObject finality = finalityButton;
+        GameObject temp = Instantiate(finality, new Vector3(4.5f,-0.5f), front) as GameObject;
+        finalityAnimator = temp.GetComponent<Animator>();
+
         playerHp = GameInfo.instance.playerHp;
         hpText.text = "HP : " + playerHp;
+
         GameInfo.instance.playerPosition = gameObject.transform.position;
+
         finalityGauge = GameInfo.instance.finalityGauge;
         finalityText.text = "Finality : " + finalityGauge;
+        finalityGauge = 1000;
         startPosition = gameObject.transform.position;
         boxCollider = GetComponent<BoxCollider2D>();
         rd2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        
         inverseMoveTime = 1f / moveTime;
     }
 
@@ -65,6 +81,21 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(finalityGauge>=1000 && !finalityMode)
+        {
+            finalityGauge = 1000;
+            finalityText.text = "Finality : " + finalityGauge;
+            Debug.Log("FF");
+            finalityAnimator.SetTrigger("Active");
+        }
+        
+        else if (finalityMode&&finalityCount==0)
+        {
+            finalityMode = false;
+            animator.SetTrigger("EndFinality");
+        }
+        if(finalityMode)
+            finalityAnimator.SetTrigger("Disable");
         if (!playerTurn || hyperTime) return;
 
         RaycastHit2D hit = new RaycastHit2D();
@@ -115,7 +146,10 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.X) && !hyperTime)
         {
-            animator.SetTrigger("Attack");
+            if (!finalityMode)
+                animator.SetTrigger("Attack");
+            else if (finalityMode)
+                animator.SetTrigger("FinalityAttack");
             DamageMonster(out hit);
             if (hit.transform == null)
                 return;
@@ -124,16 +158,26 @@ public class Player : MonoBehaviour
                 Debug.Log("Hit");
                 Monster mob = hit.transform.GetComponent<Monster>();
                 mob.MonsterHit(playerAttackDamage);
-                finalityGauge += playerAttackDamage;
-                finalityText.text = "Finality : " + finalityGauge;
+                if (!finalityMode)
+                {
+                    finalityGauge += playerAttackDamage;
+                    finalityText.text = "Finality : " + finalityGauge;
+                }
+                else if (finalityMode)
+                    finalityCount--;
             }
             else if (hit.transform.tag == "Boss")
             {
                 Debug.Log("Hit");
                 Boss mob = hit.transform.GetComponent<Boss>();
                 mob.BossHit(playerAttackDamage);
-                finalityGauge += playerAttackDamage;
-                finalityText.text = "Finality : " + finalityGauge;
+                if (!finalityMode)
+                {
+                    finalityGauge += playerAttackDamage;
+                    finalityText.text = "Finality : " + finalityGauge;
+                }
+                else if (finalityMode)
+                    finalityCount--;
             }
         }
         else if (Input.GetKeyUp(KeyCode.C))
@@ -149,6 +193,17 @@ public class Player : MonoBehaviour
         {
             BashAttack();
         }
+        else if(finalityGauge>=1000&&Input.GetKeyUp(KeyCode.R))
+        {
+            finalityMode = true;
+            finalityAnimator.SetTrigger("Disable");
+            Debug.Log("cC");
+            finalityGauge = 0;
+            finalityText.text = "Finality : " + finalityGauge;
+            animator.SetTrigger("FinalityMode");
+            
+            finalityCount = 7;
+        }
     }
 
     void GaleAttack()
@@ -163,8 +218,11 @@ public class Player : MonoBehaviour
             Gale(start, 2, hit);
             Monster mob = hit.transform.GetComponent<Monster>();
             mob.MonsterHit(playerGaleAttack);
-            finalityGauge += playerGaleAttack;
-            finalityText.text = "Finality : " + finalityGauge;
+            if (!finalityMode)
+            {
+                finalityGauge += playerGaleAttack;
+                finalityText.text = "Finality : " + finalityGauge;
+            }
         }
 
         else if (hit.transform.tag == "Boss")
@@ -172,8 +230,11 @@ public class Player : MonoBehaviour
             Gale(start, 3, hit);
             Boss mob = hit.transform.GetComponent<Boss>();
             mob.BossHit(playerGaleAttack);
-            finalityGauge += playerGaleAttack;
-            finalityText.text = "Finality : " + finalityGauge;
+            if (!finalityMode)
+            {
+                finalityGauge += playerGaleAttack;
+                finalityText.text = "Finality : " + finalityGauge;
+            }
         }
 
     }
@@ -324,8 +385,11 @@ public class Player : MonoBehaviour
             }
         }
         mob.MonsterHit(playerBashAttack);
-        finalityGauge += playerBashAttack;
-        finalityText.text = "Finality : " + finalityGauge;
+        if (!finalityMode)
+        {
+            finalityGauge += playerBashAttack;
+            finalityText.text = "Finality : " + finalityGauge;
+        }
 
     }
 
@@ -408,7 +472,10 @@ public class Player : MonoBehaviour
         hyperTime = true;
         animator.SetTrigger("DefenceOn");
         yield return new WaitForSeconds(hyperTimeSecond);
-        animator.SetTrigger("DefenceOff");
+        if (!finalityMode)
+            animator.SetTrigger("DefenceOff");
+        else if (finalityMode)
+            animator.SetTrigger("FinalityMode");
         hyperTime = false;
     }
 
@@ -457,10 +524,18 @@ public class Player : MonoBehaviour
         }
         else if (hyperTime)
         {
+            StopCoroutine(HyperTime());
             hyperTime = false;
             LookMonster(who.transform.position - transform.position);
-            animator.SetTrigger("DefenceOff");
-            animator.SetTrigger("Attack");
+            if (!finalityMode)
+            {
+                animator.SetTrigger("Attack");
+            }
+            else if (finalityMode)
+            {
+                animator.SetTrigger("FinalityAttack");
+            }
+            
             if (who.transform.tag == "Monster")
             {
                 Monster mob = who.transform.GetComponent<Monster>();

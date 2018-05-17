@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 0e422543e0497544bb57db470a0e4fe2
-timeCreated: 1524639839
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Front_Attack
@@ -55,8 +53,14 @@ TextureImporter:
     21300096: GaleBody
     21300098: GaleEffect
     21300100: BashEffect
+    21300102: Front_Finality_Attack
+    21300104: Front_Finality_Nomal
+    21300106: FinalityDisable
+    21300108: FinalityActive
+    21300110: FinalityActive2
+    21300112: FinalityDisable
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -104,11 +108,13 @@ TextureImporter:
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -122,25 +128,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thunder
+      name: Boss_Attack_Wait1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 200
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Boss_Attack_Wait1
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 0
         width: 200
         height: 200
       alignment: 9
@@ -149,36 +141,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 9d3f84de64aabc54ab5698a9786dd01b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Boss_Attack_Wait2
-      rect:
-        serializedVersion: 2
-        x: 602
-        y: 0
-        width: 200
-        height: 200
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Boss_Attack2
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 0
-        width: 200
-        height: 200
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Boss2
       rect:
         serializedVersion: 2
         x: 0
@@ -191,8 +161,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 087303cf8532f20419f5f0bac07d22f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Boss1
+      name: Boss_Attack2
       rect:
         serializedVersion: 2
         x: 0
@@ -205,8 +181,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: b500d87846ba29240801ed87975860a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Boss_Attack1
+      name: Boss2
       rect:
         serializedVersion: 2
         x: 0
@@ -219,8 +201,74 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 49a115d0c92786f40ba1c88416eca326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 804
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14598676b9891fa4a86bb8f80e6bca88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Attack1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c6935c84376df4488429a38d796c14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Lighting
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 0
+        width: 100
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cdb4a4e3b6e9b45a3c1cfd325015b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting3
       rect:
         serializedVersion: 2
         x: 201
@@ -233,8 +281,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 5e75bb1b08758414080af2481a4f5fdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Lighting3
+      name: Lighting2
       rect:
         serializedVersion: 2
         x: 201
@@ -247,22 +301,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 2ceb46c50f068854b85270d95c502453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Lighting2
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 201
-        width: 100
-        height: 300
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Trap
+      name: Front_Attack
       rect:
         serializedVersion: 2
         x: 201
@@ -275,53 +321,17 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Right_Attack
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 804
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster400
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 904
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2a0fa522089a34795efa3cb56b2a92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 905
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster400
-      rect:
-        serializedVersion: 2
-        x: 202
+        x: 201
         y: 904
         width: 100
         height: 100
@@ -331,26 +341,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster600
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 502
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7efd245e02b814eac6afc7a6f07a51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack_Wait400
       rect:
         serializedVersion: 2
         x: 302
-        y: 603
+        y: 301
         width: 100
         height: 100
       alignment: 9
@@ -359,124 +361,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Back_Attack
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 704
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Tile
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 805
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Back_Normal
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 906
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Front_Attack
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 201
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster_Attack_Wait600
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 302
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster_Attack_Wait
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 403
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster_Attack2_600
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 504
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster_Attack_Wait400
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 605
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: c2f004c185860e042b25431a5099aba2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack1_400
       rect:
         serializedVersion: 2
-        x: 404
-        y: 706
+        x: 403
+        y: 301
         width: 100
         height: 100
       alignment: 9
@@ -485,12 +381,118 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 58be36f943818314d90ecd34b03bfa91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster400
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad7f63581fb7b14a8402e5aef9261f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_Attack2_600
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 101
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a158660ef541b4a8ad98855ff211cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_Attack_Wait400
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 202
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d928b1163c7b8ce4d8e2100993fc6bea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e357a418ff4bbf4aa5787c9c5bee1a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster400
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 101
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b59a5acaa0d1604dbbb6a96e74b85ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack_Wait
       rect:
         serializedVersion: 2
-        x: 404
-        y: 807
+        x: 705
+        y: 0
         width: 100
         height: 100
       alignment: 9
@@ -499,12 +501,58 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 86fb3dc9f73946c448329230d109d2be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Front_Finality_Attack
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1021c80e2d4b61b489209b725a3f4a94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalityDisable
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb325801f06e59409f3432cafd9c27a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster
       rect:
         serializedVersion: 2
-        x: 404
-        y: 908
+        x: 705
+        y: 101
         width: 100
         height: 100
       alignment: 9
@@ -513,12 +561,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 7ee23d21697c8ec4a8ba14be322c964e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Warning2
+      name: Front_Finality_Nomal
       rect:
         serializedVersion: 2
-        x: 504
-        y: 201
+        x: 806
+        y: 101
         width: 100
         height: 100
       alignment: 9
@@ -527,12 +581,118 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 1c6a8a4d1858f074b99a7841d0f0ae8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 101
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f363fbac296f44e9002859ad1cd3a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_Attack_Wait600
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 202
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ca101f639cfda40bdcdd6857cc8968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_Attack_Wait
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 202
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2224ff7a75665d40a1ad3d031970dc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster600
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 202
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a55ac840795fa4e9e32cedf361c067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 202
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d966a18cd79aa804cb7b01300f57bcfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster600
       rect:
         serializedVersion: 2
         x: 504
-        y: 302
+        y: 303
         width: 100
         height: 100
       alignment: 9
@@ -541,12 +701,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 15c732b795c9d744ab23fcd1842d4a9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Right_Normal
+      name: Star
       rect:
         serializedVersion: 2
-        x: 504
-        y: 403
+        x: 302
+        y: 402
         width: 100
         height: 100
       alignment: 9
@@ -555,40 +721,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Left_Attack
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 504
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 605
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: 651b623c35dca1e498f56659ca46e581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Star2
       rect:
         serializedVersion: 2
-        x: 505
-        y: 706
+        x: 403
+        y: 402
         width: 100
         height: 100
       alignment: 9
@@ -597,54 +741,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Left_Nomal
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 807
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Front_Nomal
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 908
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Wall
-      rect:
-        serializedVersion: 2
-        x: 605
-        y: 201
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: f10fe0bb0583c5247bb886b239d752b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Warning3
       rect:
         serializedVersion: 2
         x: 605
-        y: 302
+        y: 303
         width: 100
         height: 100
       alignment: 9
@@ -653,12 +761,58 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 6d015a88e54824e4c9e8775e382bb581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 303
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413e375f60a266343846ced095dc6716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Front_Nomal
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 303
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f07de1f16db5840b00012128683a85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Warning4
       rect:
         serializedVersion: 2
-        x: 605
-        y: 403
+        x: 908
+        y: 303
         width: 100
         height: 100
       alignment: 9
@@ -667,40 +821,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Star
-      rect:
-        serializedVersion: 2
-        x: 605
-        y: 504
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Monster_Attack_Wait600
-      rect:
-        serializedVersion: 2
-        x: 605
-        y: 605
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: 96dd416523313b34d8cba197dcd92d44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack1_600
       rect:
         serializedVersion: 2
-        x: 606
-        y: 706
+        x: 504
+        y: 404
         width: 100
         height: 100
       alignment: 9
@@ -709,12 +841,58 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 524484d91b735c4479595b18ee75a181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_Attack_Wait600
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 503
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af201e562dd53e646b9ddc7669353afe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warning2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 503
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd90439f3c7cb946ab59773c1efe2c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack1
       rect:
         serializedVersion: 2
-        x: 606
-        y: 807
+        x: 605
+        y: 404
         width: 100
         height: 100
       alignment: 9
@@ -723,26 +901,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-    - serializedVersion: 2
-      name: Front_Defence2
-      rect:
-        serializedVersion: 2
-        x: 606
-        y: 908
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      bones: []
+      spriteID: 1e72c7d2d30a4e9469710d608b7bc285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Monster_Attack2_400
       rect:
         serializedVersion: 2
         x: 706
-        y: 201
+        y: 404
         width: 100
         height: 100
       alignment: 9
@@ -751,12 +921,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 3c4e863b0d519dd4c900c2ab44133e8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Warning
       rect:
         serializedVersion: 2
-        x: 706
-        y: 302
+        x: 807
+        y: 404
         width: 100
         height: 100
       alignment: 9
@@ -765,12 +941,38 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 7c1bf3d2670d2ea41948f9209e2dc1d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Front_Defence2
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 404
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd8eff3ce2041f4996919819ae46967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Front_Defence
       rect:
         serializedVersion: 2
-        x: 706
-        y: 403
+        x: 504
+        y: 505
         width: 100
         height: 100
       alignment: 9
@@ -779,12 +981,78 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 94443fdc70930004a9b11c08d966e1f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalityDisable
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 604
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558ddd978a131da45b6663f92e44a6ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalityActive2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 604
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f03f105d609ea5428f951b7ef1ea673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalityActive
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 606
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2f4da63014ad443bd73f452395867f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GaleEffect
       rect:
         serializedVersion: 2
-        x: 706
-        y: 504
+        x: 302
+        y: 705
         width: 20
         height: 100
       alignment: 9
@@ -793,12 +1061,18 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: da63320b90dffaa4da58faf105187528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BashEffect
       rect:
         serializedVersion: 2
-        x: 101
-        y: 804
+        x: 302
+        y: 201
         width: 40
         height: 40
       alignment: 9
@@ -807,8 +1081,20 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 69d0beca9e8b7cb4484849b5a788bb10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
