@@ -20,10 +20,13 @@ public class GameInfo: MonoBehaviour {
     public int bossKill = 1;
     public int monsterKill;
     public int finalityGauge = 0;
+    public bool skillAttack = false;
+    public bool skillBash = false;
+    public bool skillGale = false;
+    public bool skillCount = false;
+    public bool skillFinality = false;
 
-    
 
-    
 
     void Awake()
     {

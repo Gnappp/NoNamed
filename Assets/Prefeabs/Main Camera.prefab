@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   star: {fileID: 1034928899341728, guid: 50d28a6b91f2eef4b85b353777f7a5e4, type: 2}
   scenes:
+  - Tutorial
   - Trap1
   - Monster
   - Trap2
@@ -108,6 +109,12 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0}
   bossKill: 1
   monsterKill: 0
+  finalityGauge: 0
+  skillAttack: 0
+  skillBash: 0
+  skillGale: 0
+  skillCount: 0
+  skillFinality: 0
 --- !u!124 &124638858557404850
 Behaviour:
   m_ObjectHideFlags: 1

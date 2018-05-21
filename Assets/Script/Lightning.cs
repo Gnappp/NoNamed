@@ -15,15 +15,15 @@ public class Lightning : MonoBehaviour {
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        //boxCollider = GetComponent<BoxCollider2D>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         RaycastHit2D hit;
-        boxCollider.enabled = false;
+        //boxCollider.enabled = false;
         hit = Physics2D.Linecast(transform.position - new Vector3(0, 1), transform.position - new Vector3(0, 1), blockingLayer);
-        boxCollider.enabled = true;
+        //boxCollider.enabled = true;
         if (CheckEndAnimation())
         {
             if (hit.transform == null) Destroy(this.gameObject);
@@ -34,6 +34,7 @@ public class Lightning : MonoBehaviour {
                 player.PlayerHit(thunderDamage,this.gameObject);
                 Destroy(this.gameObject);
             }
+
             
         }
 	}

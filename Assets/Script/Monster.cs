@@ -178,8 +178,9 @@ public class Monster : MonoBehaviour {
         monsterHp -= damage;
         if (monsterHp <= 0)
         {
-            gameObject.SetActive(false);
             GameInfo.instance.monsterKill--;
+            Destroy(this.gameObject);
+            
         }
     }
 }
