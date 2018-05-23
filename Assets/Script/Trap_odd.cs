@@ -2,29 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap_odd : MonoBehaviour {
+public class Trap_odd : MonoBehaviour
+{
 
     SpriteRenderer render;
     public Sprite trap;
     public Sprite tile;
+    Vector2 playerPos;
+    bool positionCheck;
 
-    
     // Use this for initialization
-    void Start()
+    public void Start()
     {
-        render = (SpriteRenderer)gameObject.GetComponent<SpriteRenderer>();
-        render.sprite = trap;
-        StartCoroutine(Boom(render));
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        
+        for (int i = 0; i < this.transform.GetChildCount(); i++)
+        {
+            render = this.transform.Find("Trap" + i).GetComponentInChildren<SpriteRenderer>();
+            render.sprite = trap;
+        }
+        positionCheck = true;
+        playerPos = new Vector2(0.5f,4.5f);
     }
 
-    IEnumerator Boom(SpriteRenderer render)
+    // Update is called once per frame
+    void Update()
     {
-            yield return new WaitForSeconds(3f);
-            render.sprite = tile;
+        if (playerPos != GameInfo.instance.playerPosition && positionCheck)
+        {
+            Debug.Log(playerPos + "   " + GameInfo.instance.playerPosition);
+            for (int i = 0; i < this.transform.GetChildCount(); i++)
+            {
+                render = this.transform.Find("Trap" + i).GetComponentInChildren<SpriteRenderer>();
+                render.sprite = tile;
+            }
+            positionCheck = false;
+        }
     }
+
 }

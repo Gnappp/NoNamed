@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CreateTest.unity
+- path: Assets/Scenes/Trap1.unity
   isLoaded: 1
   isActive: 1

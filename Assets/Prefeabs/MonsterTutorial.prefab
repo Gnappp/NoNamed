@@ -122,7 +122,7 @@ MonoBehaviour:
   blockingLayer:
     serializedVersion: 2
     m_Bits: 256
-  monsterHp: 100
+  monsterHp: 250
   monsterDamage: 1
 --- !u!212 &212256859310161216
 SpriteRenderer:

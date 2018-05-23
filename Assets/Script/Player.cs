@@ -138,6 +138,9 @@ public class Player : MonoBehaviour
                     hpText.text = "HP : " + playerHp;
                     StartCoroutine(TrapIgnore());
                     rd2D.MovePosition(startPosition);
+                    GameInfo.instance.playerPosition = startPosition;
+                    GameObject temp = GameObject.Find("Trap");
+                    temp.transform.GetComponent<Trap_odd>().Start();
                 }
 
             }
